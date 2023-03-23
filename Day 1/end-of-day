@@ -1,0 +1,5 @@
+#Write your code below this line 👇
+print("Welcome to my place. ")
+var1 = input("Which city did you grew up in?\n ")
+var2 = input("What is the name of your pet?\n ")
+print(f"{var1} {var2}")
