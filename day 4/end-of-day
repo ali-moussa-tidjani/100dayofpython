@@ -1,0 +1,48 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+
+import random
+user_actiin = int(input("What do you choice? Type 0 for rock 1 for paper 2 for scissors.\n"))
+computer_action = random.choice(possible_actions)
+print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
+
+if user_action == 0:
+    if computer_action == "scissors":
+        print("Rock smashes scissors! You win!")
+    else:
+        print("Paper covers rock! You lose.")
+elif user_action == "paper":
+    if computer_action == "rock":
+        print("Paper covers rock! You win!")
+    else:
+        print("Scissors cuts paper! You lose.")
+elif user_action == "scissors":
+    if computer_action == "paper":
+        print("Scissors cuts paper! You win!")
+    else:
+        print("Rock smashes scissors! You lose.")
